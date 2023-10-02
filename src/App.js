@@ -2,17 +2,16 @@ import logo from "./logo.svg";
 import "./App.css";
 import products from "./products";
 
-const productList = products.map((book) => {
-  return (
-    <div className="Card">
-      <img src={book.img}></img>
-      <h2>{book.name}</h2>
-      <h4>{book.price.toFixed(3)} KD</h4>
-    </div>
-  );
-});
-
 function App() {
+  const productList = products.map((book) => {
+    return (
+      <div className="Card">
+        <img src={book.img}></img>
+        <h2>{book.name}</h2>
+        <h4>{book.price.toFixed(3)} KD</h4>
+      </div>
+    );
+  });
   return (
     <div className="App">
       <div>
