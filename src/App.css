@@ -66,8 +66,16 @@ h3 {
 }
 
 .bookCard {
-  padding: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Card {
+  border: 1px solid grey;
+  border-radius: 30px;
+  padding: 15px;
+  flex: 1 0 25%;
+  margin: 30px;
 }
